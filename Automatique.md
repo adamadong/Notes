@@ -1,6 +1,6 @@
 # Automatique
 _This note is mainly in French._
-> Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.
+> Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.  
 > _These should be just the differences between different notations_
 
 - [Automatique](#automatique)
@@ -15,7 +15,7 @@ _This note is mainly in French._
 
 En régime transitoire:
 **Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{\lvert s(t)-s_{\infty} \rvert}{s_{\infty}}<0.05 `$   
-**Gain statique**
-**Valeur de résonnance**
+**Gain statique**  
+**Valeur de résonnance**  
 **Bande Passante**
 
