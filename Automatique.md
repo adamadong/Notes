@@ -3,7 +3,10 @@ _This note is mainly in French._
 > Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.
 > _These should be just the differences between different notations_
 
-[toc]
+- [Automatique](#automatique)
+  - [1. Base de connaissances](#1-base-de-connaissances)
+    - [1.1 quelques notations utiles](#11-quelques-notations-utiles)
+
 ## 1. Base de connaissances
 ### 1.1 quelques notations utiles
  En régime permanent:
