@@ -14,9 +14,8 @@ _This note is mainly in French._
  >_Les deux dernières notations ne sont pas requis pour le semestre S7_
 
 En régime transitoire:
-**Temps de réponse à 5%** : $\forall t>t_{5\%},\frac{\left|s(t)-s_{\infty}\right|}{s_{\infty}}<0.05 $   
+**Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{\lvert s(t)-s_{\infty} \rvert}{s_{\infty}}<0.05 `$   
 **Gain statique**
 **Valeur de résonnance**
 **Bande Passante**
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
