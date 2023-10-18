@@ -17,5 +17,5 @@ En régime transitoire:
 **Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{\lvert s(t)-s_{\infty} \rvert}{s_{\infty}}<0.05 `$   
 **Gain statique**  
 **Valeur de résonnance**  
-**Bande Passante**
+**Bande Passante** ：des fréquences où  la valeur en cette fréquence vaut la valeur maximale $`-3dB`$
 
