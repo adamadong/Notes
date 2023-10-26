@@ -42,7 +42,7 @@ La fonction de transfert: $`H(p)=\frac{X(p)}{X_C(P)}=\frac{F_1(P)}{1+F_1(P)F_2(P
 _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
 
 ### I.3 Système du $`1^{er}`$ ordre et $`2^{e}`$ ordre
-- Système du $`1^{er}`$ ordre:
-  $$` H(p)=\frac{S(p)}{E(p)}=\frac{K}{1+\tau p} `$$
+- Système du $`1^{er}`$ ordre:  
+  $` H(p)=\frac{S(p)}{E(p)}=\frac{K}{1+\tau p} `$  
   K est le gain statique; $`\tau`$ est la constante de temps
 
