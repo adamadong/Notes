@@ -158,10 +158,10 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   ### III.3 Marges de stabilité
   Marge de gain: $`MG=-G_{dB-BO}(\omega_{\pi})`$
   Marge de phase: $`M_\varphi=\pi+\varphi_{BO}(\omega_{C0})`$
-  Un système est stable en boucle fermée si ses marges de stabilité vérifient $`MG>0\text{ et }M_\varphi>0`$
+  Un système est stable en boucle fermée si ses marges de stabilité vérifient $`MG>0\text{ et }M_\varphi>0`$  
 
-## IV Synthèse de Correcteur
-![correcteur](automatique/correcteur.pdf)
+## IV Synthèse de Correcteur  
+![correcteur](automatique/correcteur.pdf)  
 
 
 
