@@ -122,12 +122,12 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   - en rampe, il faut au moins deux intégrations en amont de la perturbation,
   - en parabole, il faut au moins trois intégrations en amont de la perturbation.  
   ### II.4 Amortissement  
-  ![coneamor](automatique/coneamo.jpg)    
+  ![[coneamor](automatique/coneamo.jpg)](https://github.com/adamadong/Notes/blob/main/automatique/coneamo.jpg)    
   $`\sin(\theta)=\frac{\xi\omega_0}{\omega_0}=\xi\\\leftrightarrow\theta=\arcsin(\xi)`$  
 ## III Déterminer les performances d'un système bouclé à partir de la boucle ouverte
   ### III.1 Critère de Nyquist  
   Contour de Bromwich $`\gamma`$  
-  ![bromwich](automatique/Bromwich.jpg)  
+  ![[bromwich](automatique/Bromwich.jpg) ](https://github.com/adamadong/Notes/blob/main/automatique/Bromwich.jpg) 
   
   $`Z_{\gamma}(1+H_{BO}(p))-P_{\gamma}(H_{BO}(p))=n^{hor}_{(-1,0)}(\Gamma_0)`$  
   $`Z_{\gamma}(1+H_{BO}(p))`$ : nombre de zéros de $`1+H_{BO}(p)`$, càd nombre de pôles en boucle fermé  
@@ -137,7 +137,7 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   __Critère de Nyquist__  
   Un système bouclé est stable si et seulement si le lieu de Nyquist de sa FTBO, décrit dans le sens des pulsations croissantes, ne passe pas par le point critique (-1, 0) et fait autour de celui-ci un nombre de tours, dans le sens trigonométrique, égal au nombre de pôles instables de sa FTBO.  
   En effet,  
-  ![Preuve](automatique/Preuve.jpg)  
+  ![[Preuve](automatique/Preuve.jpg)](https://github.com/adamadong/Notes/blob/main/automatique/Preuve.jpg)  
   ### III.2 Critère de Revers  
   Un système bouclé est stable si sa fonction de transfert en boucle ouvert vérifie les deux conditions suivantes:  
   1. $`G_{dB-BO}(\omega_{\pi})< 0 dB`$ pour une pulsation $`\omega_{\pi}`$ telle que $`\varphi_{BO}(\omega_{\pi})=-\pi`$
@@ -152,7 +152,7 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   ![CB](automatique/CB.jpg)
   Dans le plan de Nyquist:  
   ![CdRN](automatique/CdRN.jpg)  
-  __Critère du revers dans le plan de Nyquist__
+  __Critère du revers dans le plan de Nyquist__  
   Le système est stable en BF si, en parcourant le lieu fréquentiel de la BO dans le sens des pulsations croissantes, on laisse le point critique « à gauche »  
   ![CN](automatique/CN.jpg)  
   ### III.3 Marges de stabilité
