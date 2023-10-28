@@ -17,6 +17,8 @@ _This note is mainly in French._
   - [III Déterminer les performances d'un système bouclé à partir de la boucle ouverte](#iii-déterminer-les-performances-dun-système-bouclé-à-partir-de-la-boucle-ouverte)
     - [III.1 Critère de Nyquist](#iii1-critère-de-nyquist)
     - [III.2 Critère de Revers](#iii2-critère-de-revers)
+    - [III.3 Marges de stabilité](#iii3-marges-de-stabilité)
+  - [IV Synthèse de Correcteur](#iv-synthèse-de-correcteur)
 
 ## I. Base de connaissances
 ### I.1 quelques notations utiles
@@ -25,7 +27,7 @@ _This note is mainly in French._
  >_Les deux dernières notations ne sont pas requis pour le semestre S7_
 
 En régime transitoire:
-**Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{\lvert s(t)-s_{\infty} \rvert}{s_{\infty}}<0.05 `$   
+**Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{| s(t)-s_{\infty} |}{s_{\infty}}<0.05`$   
 **Gain statique**  
 **Valeur de résonnance**  
 **Bande Passante** ：des fréquences où  la valeur en cette fréquence vaut la valeur maximale $`-3dB`$
@@ -109,7 +111,11 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   -  en rampe, il faut au moins deux intégrations dans la boucle ouverte,
   -  en parabole, il faut au moins trois intégrations dans la boucle ouverte.  
   
-![bilanpre](automatique/Bilanpre.jpg)  
+  ![bilanpre](automatique/Bilanpre.jpg)  
+  Notation ECM:
+  - erreur en régime permanent -> échelon
+  - erreur de position -> rampe
+  - erreur de traînage -> parabole
   ### II.3 Robustesse
   Pour avoir une erreur nulle à une perturbation :  
   - en échelon, il faut au moins une intégration en amont de la perturbation,
@@ -129,13 +135,33 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   $`\Gamma_0`$ est le lieu de Nyquist de $`H_{BO}(p)`$  
   $`n^{hor}_{(-1,0)}(\Gamma_0) `$ : le nombre de tours dans le sens horaire autour du point (-1,0)  
   __Critère de Nyquist__  
-  Un système bouclé est stable si et seulement si le lieu de Nyquist de sa FTBO, décrit dans le sens des pulsations croissantes, ne passe pas par le point critique (-1, 0) et fait autour de celui-ci un nombre de tours, dans le sens trigonométrique, égal au nombre de pôles instables de sa FTBO.
+  Un système bouclé est stable si et seulement si le lieu de Nyquist de sa FTBO, décrit dans le sens des pulsations croissantes, ne passe pas par le point critique (-1, 0) et fait autour de celui-ci un nombre de tours, dans le sens trigonométrique, égal au nombre de pôles instables de sa FTBO.  
   En effet,  
   ![Preuve](automatique/Preuve.jpg)  
-  ### III.2 Critère de Revers
+  ### III.2 Critère de Revers  
+  Un système bouclé est stable si sa fonction de transfert en boucle ouvert vérifie les deux conditions suivantes:  
+  1. $`G_{dB-BO}(\omega_{\pi})< 0 dB`$ pour une pulsation $`\omega_{\pi}`$ telle que $`\varphi_{BO}(\omega_{\pi})=-\pi`$
+  2. $`\varphi_{BO}(\omega_{C0})>-\pi`$ pour une pulsation $`\omega_{C0}`$ telle que $`G_{dB-BO}(\omega_{C0})=0`$
   
+  Dans le plan de Bode:  
+  ![CdRB](automatique/CdRB.jpg)  
+  Dans le plan de Black:  
+  ![CdRBl](automatique/CdRB2.jpg)  
+  __Critère du revers dans le plan de Black__  
+  Le système est stable en BF si, en parcourant le lieu fréquentiel de la BO dans le sens des pulsations croissantes, on laisse le point critique « à droite »  
+  ![CB](automatique/CB.jpg)
+  Dans le plan de Nyquist:  
+  ![CdRN](automatique/CdRN.jpg)  
+  __Critère du revers dans le plan de Nyquist__
+  Le système est stable en BF si, en parcourant le lieu fréquentiel de la BO dans le sens des pulsations croissantes, on laisse le point critique « à gauche »  
+  ![CN](automatique/CN.jpg)  
+  ### III.3 Marges de stabilité
+  Marge de gain: $`MG=-G_{dB-BO}(\omega_{\pi})`$
+  Marge de phase: $`M_\varphi=\pi+\varphi_{BO}(\omega_{C0})`$
+  Un système est stable en boucle fermée si ses marges de stabilité vérifient $`MG>0\text{ et }M_\varphi>0`$
 
-  
+## IV Synthèse de Correcteur
+![correcteur](automatique/correcteur.pdf)
 
 
 
