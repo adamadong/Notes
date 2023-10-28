@@ -11,6 +11,12 @@ _This note is mainly in French._
     - [I.4 Diagrammes fréquentiels](#i4-diagrammes-fréquentiels)
   - [II Méthodes de détermination des performances du système](#ii-méthodes-de-détermination-des-performances-du-système)
     - [II.1 Stabilité](#ii1-stabilité)
+    - [II.2 Précision](#ii2-précision)
+    - [II.3 Robustesse](#ii3-robustesse)
+    - [II.4 Amortissement](#ii4-amortissement)
+  - [III Déterminer les performances d'un système bouclé à partir de la boucle ouverte](#iii-déterminer-les-performances-dun-système-bouclé-à-partir-de-la-boucle-ouverte)
+    - [III.1 Critère de Nyquist](#iii1-critère-de-nyquist)
+    - [III.2 Critère de Revers](#iii2-critère-de-revers)
 
 ## I. Base de connaissances
 ### I.1 quelques notations utiles
@@ -91,13 +97,45 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   ### II.1 Stabilité
   __Condition nécessaire et suffisante de stabilité__  
   Un système est stable si et seulement si <strong style="color:red">tous les pôles</strong> de sa fonction de transfert sont à <strong style="color:red">partie réelle strictement négative</strong>.  
-  __table de Routh__
+  __Table de Routh__
   ![Routh](automatique/Routh.jpg)  
   Un système est stable si et seulement si les deux conditions ci-après sont vérifiées :  
   tous les coefficients de son équation caractéristique sont <strong style="color:red">de même signe</strong>;  
   tous les termes de <strong style="color:red">la première colonne</strong>, dite colonne des pivots, de la table de Routh de son équation caractéristique sont <strong style="color:red">de même signe</strong>   
-  _tout changement de signe dans cette colonne correspond à l’existence d’un pôle à partie réelle positive._
+  _tout changement de signe dans cette colonne correspond à l’existence d’un pôle à partie réelle positive._  
+  ### II.2 Précision  
+  Pour avoir une erreur nulle à une consigne:  
+  -  en échelon, il faut au moins une intégration dans la boucle ouverte,
+  -  en rampe, il faut au moins deux intégrations dans la boucle ouverte,
+  -  en parabole, il faut au moins trois intégrations dans la boucle ouverte.  
+  
+![bilanpre](automatique/Bilanpre.jpg)  
+  ### II.3 Robustesse
+  Pour avoir une erreur nulle à une perturbation :  
+  - en échelon, il faut au moins une intégration en amont de la perturbation,
+  - en rampe, il faut au moins deux intégrations en amont de la perturbation,
+  - en parabole, il faut au moins trois intégrations en amont de la perturbation.  
+  ### II.4 Amortissement  
+  ![coneamor](automatique/coneamo.jpg)    
+  $`\sin(\theta)=\frac{\xi\omega_0}{\omega_0}=\xi\\\leftrightarrow\theta=\arcsin(\xi)`$  
+## III Déterminer les performances d'un système bouclé à partir de la boucle ouverte
+  ### III.1 Critère de Nyquist  
+  Contour de Bromwich $`\gamma`$  
+  ![bromwich](automatique/Bromwich.jpg)  
+  
+  $`Z_{\gamma}(1+H_{BO}(p))-P_{\gamma}(H_{BO}(p))=n^{hor}_{(-1,0)}(\Gamma_0)`$  
+  $`Z_{\gamma}(1+H_{BO}(p))`$ : nombre de zéros de $`1+H_{BO}(p)`$, càd nombre de pôles en boucle fermé  
+  $`P_{\gamma}(H_{BO}(p))`$ : nombre de pôles en boucle ouvert  
+  $`\Gamma_0`$ est le lieu de Nyquist de $`H_{BO}(p)`$  
+  $`n^{hor}_{(-1,0)}(\Gamma_0) `$ : le nombre de tours dans le sens horaire autour du point (-1,0)  
+  __Critère de Nyquist__  
+  Un système bouclé est stable si et seulement si le lieu de Nyquist de sa FTBO, décrit dans le sens des pulsations croissantes, ne passe pas par le point critique (-1, 0) et fait autour de celui-ci un nombre de tours, dans le sens trigonométrique, égal au nombre de pôles instables de sa FTBO.
+  En effet,  
+  ![Preuve](automatique/Preuve.jpg)  
+  ### III.2 Critère de Revers
+  
 
+  
 
 
 
