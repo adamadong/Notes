@@ -2,6 +2,9 @@
 _This note is mainly in French._
 > Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.  
 > _These should be just the differences between different notations_
+> Several reference from Forrest:
+  ![SLCI](SLCI.pdf)
+  ![Stabilite](Stabilite SLCI.pdf)
 
 - [Automatique](#automatique)
   - [I. Base de connaissances](#i-base-de-connaissances)
@@ -161,7 +164,8 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   Un système est stable en boucle fermée si ses marges de stabilité vérifient $`MG>0\text{ et }M_\varphi>0`$  
 
 ## IV Synthèse de Correcteur  
-![correcteur](automatique/correcteur.pdf)  
+![correcteur](automatique/correcteur.pdf) 
+ 
 
 
 
