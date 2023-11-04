@@ -2,8 +2,9 @@
 _This note is mainly in French._
 > Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.  
 > _These should be just the differences between different notations_  
-> Several reference from Forrest:
+> Several reference from Forrest:  
   https://github.com/adamadong/Notes/blob/main/automatique/Stabilite%20SLCI.pdf
+  https://github.com/adamadong/Notes/blob/main/automatique/SLCI.pdf
   
 
 - [Automatique](#automatique)
