@@ -3,8 +3,8 @@ _This note is mainly in French._
 > Principal References are textbooks from ECPK while small changes are made according to classes taught at ECM.  
 > _These should be just the differences between different notations_  
 > Several reference from Forrest:
-  ![SLCI](automatique/SLCI.pdf)
-  ![Stabilite](automatique/Stabilite SLCI.pdf)
+  https://github.com/adamadong/Notes/blob/main/automatique/Stabilite%20SLCI.pdf
+  
 
 - [Automatique](#automatique)
   - [I. Base de connaissances](#i-base-de-connaissances)
