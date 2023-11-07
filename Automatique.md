@@ -117,9 +117,10 @@ _Ici, le + dans la fonction de transfert correspond au - dans le schéma._
   
   ![bilanpre](automatique/Bilanpre.jpg)  
   Notation ECM:
-  - erreur en régime permanent -> échelon
-  - erreur de position -> rampe
-  - erreur de traînage -> parabole
+  - erreur en régime permanent -> 
+  - erreur de position -> échelon
+  - erreur de traînage -> rampe
+  - erreur d'accéleration -> parabole
   ### II.3 Robustesse
   Pour avoir une erreur nulle à une perturbation :  
   - en échelon, il faut au moins une intégration en amont de la perturbation,
