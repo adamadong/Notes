@@ -33,7 +33,7 @@ _This note is mainly in French._
 En régime transitoire:
 **Temps de réponse à 5%** : $`\forall t>t_{5\%},\frac{| s(t)-s_{\infty} |}{s_{\infty}}<0.05`$   
 **Gain statique**  
-**Valeur de résonnance**  
+**Valeur de résonnance** $`Q=\frac{f_0}{\Delta f}`$  
 **Bande Passante** ：des fréquences où  la valeur en cette fréquence vaut la valeur maximale $`-3dB`$
 
 ### I.2 Transformée de Laplace  
